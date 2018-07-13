@@ -41,8 +41,8 @@ var MouseCounter = React.createClass({
     },
 
     render: function() {
-        return React.createElement('div', {onMouseEnter: this.increment},
-            React.createElement('span', {}, 'Licznik ' + this.state.counter)
+        return React.createElement('div', {},
+            React.createElement('p', {onMouseEnter: this.increment}, 'Licznik ' + this.state.counter)
         );
     }
 });
