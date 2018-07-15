@@ -19,12 +19,11 @@ var Counter = React.createClass({
     },
 
     render: function() {
-        return React.createElement('button', {onClick: this.increment},
-            React.createElement('div', {}, 'Licznik ' + this.state.counter)
+        return React.createElement('div', {},'Licznik ' + this.state.counter,
+            React.createElement('button', {onClick: this.increment},'+' ),
+            React.createElement('button', {onClick: this.decrement},'-' )
         );
-        return React.createElement('button', {onClick: this.decrement},
-            React.createElement('div', {}, 'Licznik ' + this.state.counter)
-    )}
+    }
 });
 
 var MouseCounter = React.createClass({
